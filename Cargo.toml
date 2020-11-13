@@ -1,0 +1,18 @@
+[package]
+name = "prolog-rs"
+version = "0.1.0"
+authors = ["Uniformbuffer <uniformbuffer@github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[features]
+default = ["swi_prolog_backend"]
+
+swi_prolog_backend = ["swi_prolog"]
+
+
+[dependencies]
+tokio = { version = "*", features = ["rt","rt-multi-thread","macros"] }
+swi_prolog = {path = "./src/backends/swi_prolog", optional = true}
