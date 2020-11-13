@@ -78,6 +78,7 @@ checksum = "c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8"
 [[package]]
 name = "swi_prolog"
 version = "0.1.0"
+source = "git+https://github.com/uniformbuffer/swi_prolog?branch=main#d1b31e461d4cb540bb8673faae09842fefc8f87b"
 dependencies = [
  "lazy_static",
  "tokio",

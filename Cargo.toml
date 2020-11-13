@@ -9,10 +9,9 @@ edition = "2018"
 
 [features]
 default = ["swi_prolog_backend"]
-
 swi_prolog_backend = ["swi_prolog"]
 
 
 [dependencies]
 tokio = { version = "*", features = ["rt","rt-multi-thread","macros"] }
-swi_prolog = {path = "./src/backends/swi_prolog", optional = true}
+swi_prolog = {git = "https://github.com/uniformbuffer/swi_prolog", branch = "main", optional = true}
